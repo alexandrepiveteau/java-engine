@@ -1,5 +1,7 @@
 # java-engine : Operational Transform in Java
 
+[![Build Status](https://travis-ci.com/heig-PRO-b04/java-engine.svg?branch=master)](https://travis-ci.com/heig-PRO-b04/java-engine)
+
 This repository contains information related to operational transform, and an implementation of some OT masters and replicas.
 
 Operational Transform is a process that consists in transforming operations based on their order of arrival, in order to create a replicated log available to all clients and with eventual consistency guarantees. It is used in collaborative tools like Google Drive. More information can be found on [Wikipedia](https://en.wikipedia.org/wiki/Operational_transformation).
