@@ -10,7 +10,7 @@ This software is developed as a semester project (PRO) at HEIG-VD, academic year
 
 ## Development team
 
-+ Mathieu **Burguburu** (Ass. PM)
++ Matthieu **Burguburu** (Ass. PM)
 + David **Dupraz**
 + Clarisse **Fleurimont**
 + Alexandre **Piveteau** (PM)
