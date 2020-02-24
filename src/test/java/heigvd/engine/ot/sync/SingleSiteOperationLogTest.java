@@ -11,17 +11,18 @@ public class SingleSiteOperationLogTest {
   private PrimaryOperationLog<LogOperation, EncodedOperation> primary() {
     return new PrimaryOperationLog<>(
         new LogOperationDecoder(),
-        new LogOperationEncoder()
+        new LogOperationEncoder(),
+        Transformation.identity()
     );
   }
 
   private ReplicaOperationLog<LogOperation, EncodedOperation> replica(
       PrimaryOperationLog<LogOperation, EncodedOperation> primary
   ) {
-    // TODO : Link the two instances with a two-way communication channel.
     return new ReplicaOperationLog<>(
         primary.getDecoder(),
-        primary.getEncoder()
+        primary.getEncoder(),
+        primary.createProtocol()
     );
   }
 
