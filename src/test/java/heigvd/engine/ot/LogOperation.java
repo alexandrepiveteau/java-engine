@@ -1,5 +1,6 @@
 package heigvd.engine.ot;
 
+@FunctionalInterface
 public interface LogOperation {
 
   static LogOperation decrement() {
@@ -9,5 +10,7 @@ public interface LogOperation {
   static LogOperation increment() {
     return new IncrementOperation();
   }
+
+  int apply(int value);
 
 }
